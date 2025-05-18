@@ -52,7 +52,7 @@ class _TipCalucltaor extends State<TipCalucltaor> {
       ),
       body: Center(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Total Amount : $total",
@@ -78,7 +78,7 @@ class _TipCalucltaor extends State<TipCalucltaor> {
                 decoration: InputDecoration(
                   filled: true, // Enables background color
                   fillColor: Colors.blue[100],
-                  hintText: 'Enter the Bill',
+                  hintText: 'Enter the Amount',
 
                   hintStyle: TextStyle(color: Color.fromARGB(255, 17, 16, 16)),
                   prefixIcon: Icon(Icons.currency_rupee_sharp),
@@ -100,7 +100,7 @@ class _TipCalucltaor extends State<TipCalucltaor> {
                   filled: true, // Enables background color
                   fillColor: Colors.blue[100],
                   hintText:
-                      'Enter the percentage of tips you are going to give',
+                      'Enter the percentage of tips you are wishing to give(optional)',
 
                   hintStyle: TextStyle(color: Color.fromARGB(255, 17, 16, 16)),
                   prefixIcon: Icon(Icons.percent),
@@ -131,9 +131,9 @@ class _TipCalucltaor extends State<TipCalucltaor> {
               ),
             ),
             Text(
-              "         BILL:\n------------------------\nAmount:     ${amt.toStringAsFixed(2)}\nTips:           $percen \n-------------------------\nTotal amount:$total",
+              "         BILL\n-----------------------------\nAmount:     ${amt.toStringAsFixed(2)}\nTips:           $percen \n-----------------------------\nTotal amount:$total",
               style: TextStyle(
-                color: Color.fromARGB(255, 16, 16, 16),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
