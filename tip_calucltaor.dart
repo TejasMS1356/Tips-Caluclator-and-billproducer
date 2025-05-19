@@ -18,7 +18,9 @@ class _TipCalucltaor extends State<TipCalucltaor> {
     double? amtValue = double.tryParse(billController.text);
     double? perValue = double.tryParse(percentageController.text);
 
-    if (amtValue != null && perValue != null) {
+    if (amtValue != null && perValue != null amtValue > 0 &&
+        perValue <= 100 &&
+        perValue > 0) {
       setState(() {
         amt = amtValue; // Update the amt variable
         total = amtValue + (amtValue * perValue / 100);
